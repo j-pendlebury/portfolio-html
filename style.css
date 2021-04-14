@@ -222,6 +222,11 @@ input, textarea {
 
 textarea {
   height: 150px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form button {
+  font-size: 1.5rem;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -332,6 +337,11 @@ textarea {
 
   .buttons button:first-child {
     margin-right: 1rem;
+  }
+
+  form button {
+    font-size: 1rem;
+    padding: 0 2rem;
   }
 }
 
