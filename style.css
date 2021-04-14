@@ -77,9 +77,14 @@ button svg {
   margin-right: 1rem;
 }
 
-.buttons button:hover {
+button:hover {
   cursor: pointer;
   box-shadow: 0 0 10px #ffc8b1;
+}
+
+form button {
+  width: 50%;
+  margin: 10px auto;
 }
 
 .about {
@@ -253,6 +258,20 @@ textarea {
   }
 }
 
+@media screen and (max-width:1309px) {
+  .projects {
+    height: 500px;
+  }
+
+  .project {
+    overflow: scroll;
+  }
+
+  .project-box .project:last-child {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .intro {
     padding: 0;
@@ -282,11 +301,16 @@ textarea {
 
   .projects {
     flex: 1;
+    height: auto;
   }
 
   .project-box {
     display: flex;
     flex-direction: column;
+  }
+
+  .project-box .project:last-child {
+    display: block;
   }
 
   .project {
@@ -312,6 +336,8 @@ textarea {
     margin-right: 1rem;
   }
 }
+
+
  
 @media screen and (max-width: 700px) {
   main {
