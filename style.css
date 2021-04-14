@@ -7,6 +7,8 @@ html, * {
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f7f7fa;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.555) transparent;
 }
 
 h1, h2 {
@@ -97,7 +99,6 @@ form button {
   position: relative;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  overflow: hidden;
 }
 
 .about-overlay {
@@ -264,11 +265,8 @@ textarea {
   }
 
   .project {
-    overflow: scroll;
-  }
-
-  .project-box .project:last-child {
-    display: none;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
